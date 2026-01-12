@@ -70,15 +70,13 @@ setup(
     extras_require={
         "dev": dev_requirements,
     },
-    install_package_data=True,
-    license="DINOv3 LIcense",
+    license="DINOv3 License",
     license_files=("LICENSE.md",),
     classifiers=[
         # Trove classifiers: https://github.com/pypa/trove-classifiers/blob/main/src/trove_classifiers/__init__.py
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Intended Audience :: Science/Research",
-        "License :: Other/Proprietary License",
         "Programming Language :: Python :: 3.11",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
         "Topic :: Software Development :: Libraries :: Python Modules",

@@ -58,6 +58,17 @@ class PlainDETR(nn.Module):
             num_queries_one2one: number of object queries for one-to-one matching part
             num_queries_one2many: number of object queries for one-to-many matching part
             mixed_selection: a trick for Deformable DETR two stage
+        
+        参数说明：
+            backbone: 要使用的骨干网络模块，详见 backbone.py
+            transformer: Transformer 架构模块，详见 transformer.py
+            num_classes: 目标类别数量
+            aux_loss: 是否使用辅助解码损失（即每个解码层都计算损失）
+            with_box_refine: 是否使用迭代式边界框精调
+            two_stage: 是否采用两阶段 Deformable DETR
+            num_queries_one2one: 一对一匹配部分的对象查询数量
+            num_queries_one2many: 一对多匹配部分的对象查询数量
+            mixed_selection: 两阶段 Deformable DETR 的一个技巧
 
         """
         super().__init__()
