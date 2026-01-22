@@ -16,3 +16,14 @@ dist/
 
 # Ignore vscode directory
 .vscode/
+.claude/
+.trae/
+.spec-workflow/
+.github/
+logs/
+output/
+weights/
+*_results/
+
+*.pt
+*.pth
